@@ -27,15 +27,4 @@ Pod::Spec.new do |s|
     ss.framework  = "Foundation"
   end
 
-  s.subspec "ReactiveSwift" do |ss|
-    ss.source_files = "Sources/ReactiveMoya/"
-    ss.dependency "Moya/Core"
-    ss.dependency "ReactiveSwift", "~> 3.0"
-  end
-
-  s.subspec "RxSwift" do |ss|
-    ss.source_files = "Sources/RxMoya/"
-    ss.dependency "Moya/Core"
-    ss.dependency "RxSwift", "~> 4.0"
-  end
 end
